@@ -1,0 +1,96 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, aqua, pink);
+  }
+.profileCard{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  width: 900px;
+  padding: 50px;
+  border-radius: 10px;
+  position: relative;
+}
+.profile-pic{
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid rgba(75, 69, 69, 0.498);
+}
+.info{
+  margin-left: 30px;
+  color:rgb(42, 72, 62);
+  /* font-weight: 600; */
+  font-size:18px;
+  font-weight: 500;
+}
+.info h1{
+  font-size: 25px;
+  font-weight: 500px;
+  color: rgb(21, 64, 32);
+  margin-bottom: 10px;
+}
+.info ul{
+  display: flex;
+  align-items: center;
+  margin: 10px 0 30px;
+}
+.info ul li{
+  list-style: none;
+  display: inline-flex;
+  align-self: center;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.info ul li img{
+  width:20px;
+  margin-right: 5px;
+}
+.link{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+.link a{
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  height: 50px;
+  background: #8749fd;
+  color: whitesmoke;
+  border-radius: 5px;
+  border: 2px solid #8749fd;
+  padding: 10px 30px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+.link a img{
+  width: 25px;
+  margin-right: 10px;
+}
+.link .chat-btn{
+  background: whitesmoke;
+  color: #8749fd;
+}
+.shre-icon{
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background:#c6c2ce;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
