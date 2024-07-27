@@ -1,0 +1,99 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+  height: 80px;
+  background-color:rgb(12, 29, 22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 0px 100px;
+}
+nav .logo{
+  font-size: 30px;
+  font-weight: 650;
+  background: linear-gradient(to right, aqua, pink);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav ul{
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  margin: 0px 5px;
+}
+nav ul li a{
+  color:whitesmoke;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+
+}
+nav ul li a:hover,
+nav ul li a.on{
+  color: rgb(12, 29, 22);
+  background-image: linear-gradient(to right, aqua, pink);
+}
+nav .menu-btn i{
+  color: wheat;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+#clk{
+  display: none;
+}
+h1{
+  text-align: center;
+  color: #111;
+  margin:180px 50px;
+}
+@media(max-width:940px){
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    transition: all 0.4s ease-in-out;
+  }
+  #clk:checked~ul{
+    left: 0;
+  }
+  #clk:checked~.menu-btn i:before{
+    content: "\f00d";
+  }
+  #clk:checked~.menu-btn i:hover{
+    background: linear-gradient(to right, aqua, rgb(232, 205, 68));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  nav ul li{
+    margin: 30px 0;
+    font-size: 25px;
+  }
+  nav ul li a:hover,
+  nav ul li a.on{
+  color: rgb(12, 29, 22);
+  background-image: linear-gradient(to right, rgb(87, 192, 236), rgb(215, 215, 75));
+}
+nav .menu-btn i{
+  display: block;
+}
+h1{
+  text-align: center;
+  color: #111;
+  margin:180px 50px;
+}
+}
