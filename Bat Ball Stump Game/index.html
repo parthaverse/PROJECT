@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bat Ball Stump Game</title>
+</head>
+<body>
+ <h1>Bat Ball Stump Game</h1>
+ <br><br>
+<button id="bat" onclick="
+gencompChoice();
+let result;
+if(compChoice==='Ball'){
+    result='User won';
+  }
+  else if(compChoice==='Bat'){
+    result='Match tied';
+  }
+  else if(compChoice==='Stump'){
+    result='Computer won';
+  }
+  alert(`You have choosen Bat. \nComputer's coice is ${compChoice} and ${result}.`);
+  "></button>
+<button id="ball" onclick="
+gencompChoice();
+if(compChoice==='Bat'){
+    result='Match tied';
+  }
+  else if(compChoice==='Ball'){
+    result='Computer won';
+  }
+  else if(compChoice==='Stump'){
+    result='User won';
+  }
+  alert(`You have choosen Ball. \nComputer's coice is ${compChoice} and ${result}.`);"
+></button>
+<button id="stump" onclick="
+gencompChoice();
+if(compChoice==='Bat'){
+    result='User won';
+  }
+  else if(compChoice==='Ball'){
+    result='Computer won';
+  }
+  else if(compChoice==='Stump'){
+    result='User won';
+  }
+  alert(`You have choosen Stump. \nComputer's coice is ${compChoice} and ${result}.`);"
+  ></button>
+<script src="script.js"></script>
+</body>
+</html>
