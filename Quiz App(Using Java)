@@ -1,0 +1,204 @@
+import java.util.Scanner;
+class QuizProject {
+    public static void main(String[] args) {
+        questionAnswer ques = new questionAnswer();
+        questionAnswer ans = new questionAnswer();
+        Scanner sc=new Scanner(System.in);
+        char answer;
+        int correct=0, wrong=0;
+        ques.question1();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer1){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question2();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer2){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question3();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer3){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question4();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer4){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question5();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer5){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question6();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer6){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question7();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer7){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question8();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer8){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question9();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer9){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+        ques.question10();
+        answer=sc.next().charAt(0);
+        if(answer==ans.answer10){
+            correct++;
+        }
+        else {
+            wrong++;
+        }
+
+        double right=correct;
+        double percentage=(right/10)*100;
+        System.out.println("The total marks are:- 100");
+        System.out.println("Your marks are : "+correct*10);
+        System.out.println("Total questions are:- 10");
+        System.out.println("Your right answers are :"+correct+" & wrong answers are : "+wrong);
+        System.out.println("Your overall percentage is:- "+percentage+"%");
+    }
+
+}
+
+class questionAnswer {
+    public static void question1() {
+        System.out.println("1. Which of the following is not a primitive data type in Java?\n" +
+                "   a. int\n" +
+                "   b. float\n" +
+                "   c. String\n" +
+                "   d. char\n");
+        System.out.print("Select option - ");
+    }
+
+    public static void question2() {
+        System.out.println("2. What is the purpose of the finally block in Java?\n" +
+                "   a. To execute code regardless of whether an exception is thrown or not.\n" +
+                "   b. To catch exceptions.\n" +
+                "   c. To throw exceptions.\n" +
+                "   d. To define custom exceptions.\n");
+        System.out.print("Select option - ");
+    }
+
+    public static void question3() {
+        System.out.println("3. Which keyword is used to define a constant in Java?\n" +
+                "   a. final\n" +
+                "   b. static\n" +
+                "   c. const\n" +
+                "   d. immutable\n");
+        System.out.print("Select option - ");
+    }
+
+    public static void question4() {
+        System.out.println("4. What is the purpose of a primary key in a database table?\n" +
+                "   a. To uniquely identify each row in the table.\n" +
+                "   b. To establish relationships between tables.\n" +
+                "   c. To enforce data integrity.\n" +
+                "   d. All of the above.\n");
+        System.out.print("Select option - ");
+    }
+
+    public static void question5() {
+        System.out.println("5. Which type of database is best suited for handling large amounts of structured data?\n" +
+                "   a. NoSQL database\n" +
+                "   b. Relational database\n" +
+                "   c. Object-oriented database\n" +
+                "   d. Graph database\n");
+        System.out.print("Select option - ");
+    }
+
+    public static void question6() {
+        System.out.println("6. What is the SQL statement used to retrieve data from a database table?\n" +
+                "   a. SELECT\n" +
+                "   b. INSERT\n" +
+                "   c. UPDATE\n" +
+                "   d. DELETE");
+        System.out.print("Select option - ");
+    }
+
+    public static void question7() {
+        System.out.println("7. What is the purpose of a foreign key in a database table?\n" +
+                "   a. To uniquely identify each row in the table.\n" +
+                "   b. To establish relationships between tables.\n" +
+                "   c. To enforce data integrity.\n" +
+                "   d. All of the above.");
+        System.out.print("Select option - ");
+    }
+
+    public static void question8() {
+        System.out.println("\n" +
+                "8. Which type of database is best suited for handling unstructured data?\n" +
+                "   a. NoSQL database\n" +
+                "   b. Relational database\n" +
+                "   c. Object-oriented database\n" +
+                "   d. Graph database");
+        System.out.print("Select option - ");
+    }
+
+    public static void question9() {
+        System.out.println("9. What is the SQL statement used to create a new database table?\n" +
+                "   a. CREATE TABLE\n" +
+                "   b. CREATE DATABASE\n" +
+                "   c. INSERT INTO\n" +
+                "   d. SELECT");
+        System.out.print("Select option - ");
+    }
+
+    public static void question10() {
+        System.out.println("10. What is the purpose of normalization in database design?\n" +
+                "   a. To reduce redundancy and improve data integrity.\n" +
+                "   b. To increase the size of the database.\n" +
+                "   c. To make the database more complex.\n" +
+                "   d. To improve database performance.");
+        System.out.print("Select option - ");
+    }
+
+    // Answer part
+    public static char answer1 = 'c';
+    public static char answer2 = 'a';
+    public static char answer3 = 'a';
+    public static char answer4 = 'd';
+    public static char answer5 = 'b';
+    public static char answer6 = 'a';
+    public static char answer7 = 'b';
+    public static char answer8 = 'a';
+    public static char answer9 = 'a';
+    public static char answer10 = 'a';
+}
